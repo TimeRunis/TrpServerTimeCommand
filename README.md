@@ -53,6 +53,7 @@ allTimeTask:
     #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
     message: "&e你获得了一本书"
 
+#暂未实现
 dayTimeEvent:
   1:
     #达成条件/min
