@@ -58,7 +58,7 @@ dayTimeEvent:<br>
 <br><br><br>
 
 
-
+# English(unfinish)
 This plugin can record 3 datas(be recorded per one minite)<br>
 
 oneTime: It is recorded when the sevrer start.If the server restart,it will be emptied<br>
