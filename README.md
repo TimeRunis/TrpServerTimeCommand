@@ -9,6 +9,7 @@ allTime: 这个数据在本插件被安装后开始记录<br>
 dayTime: 这个数据在endTime(可以自定义)这个时间过去后会被清空<br>
 
 # config.yml
+```
 #插件的提示前缀<br>
 name: "&b[TrpServerTimeCommand]"<br>
 <br>
@@ -55,6 +56,7 @@ dayTimeEvent:<br>
     #发送给玩家的提示信息，%allTimeMin%代表本次服务器启动后的在线时间单位为分钟<br>
     message: "&e你获得了一本书"<br>
 <br>
+```
 <br><br><br>
 
 
