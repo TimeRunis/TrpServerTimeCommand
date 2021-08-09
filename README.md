@@ -40,7 +40,7 @@ dayTimeTask:
     time: 1
     #要执行的指令，%playerName%代表玩家名称
     command: "give %playerName% book 1"
-    #发送给玩家的提示信息，%dayTimeMin%代表本次服务器启动后的在线时间单位为分钟
+    #发送给玩家的提示信息，%dayTimeMin%代表每日在线时间单位为分钟
     message: "&e你获得了一本书"
 
 #本项基于allTime数据
@@ -50,7 +50,7 @@ allTimeTask:
     time: 1
     #要执行的指令，%playerName%代表玩家名称
     command: "give %playerName% book 1"
-    #发送给玩家的提示信息，%allTimeMin%代表本次服务器启动后的在线时间单位为分钟
+    #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
     message: "&e你获得了一本书"
 
 dayTimeEvent:
@@ -59,7 +59,7 @@ dayTimeEvent:
     time: 1
     #要执行的指令，%playerName%代表玩家名称
     command: "give %playerName% book 1"
-    #发送给玩家的提示信息，%allTimeMin%代表本次服务器启动后的在线时间单位为分钟
+    #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
     message: "&e你获得了一本书"
 ```
 <br><br><br>
