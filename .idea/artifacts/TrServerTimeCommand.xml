@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TrServerTimeCommand">
+    <output-path>$PROJECT_DIR$/out/artifacts/TrServerTimeCommand</output-path>
+    <root id="archive" name="TrServerTimeCommand.jar">
+      <element id="module-output" name="TrpServerTimeCommand" />
+    </root>
+  </artifact>
+</component>
