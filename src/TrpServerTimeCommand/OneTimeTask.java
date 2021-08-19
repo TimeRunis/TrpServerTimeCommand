@@ -26,7 +26,9 @@ public class OneTimeTask extends BukkitRunnable {
                 command = ChatColor.translateAlternateColorCodes('&',command.replaceAll("%playerName%",player.getName()));
                 message = ChatColor.translateAlternateColorCodes('&', message.replaceAll("%oneTimeMin%",Integer.toString(oneTime)));
                 player.sendMessage(Main.pluginName+message);
-                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command);
+                if(!command.equals("@no")){
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command);
+                }
             }
         }
 
