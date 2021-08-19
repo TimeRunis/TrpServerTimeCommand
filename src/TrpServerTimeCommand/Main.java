@@ -20,7 +20,7 @@ public class Main extends JavaPlugin {
         instance = this;
         pluginName = ChatColor.translateAlternateColorCodes('&',Reader.config.getString("name") );
         getLogger().info("当你看到这个的时候，TrServerTimeCommand已经加载到你的服务器中了~");
-        getLogger().info("TrpServerTimeCommand  Copyright (C) 2021  TimeRunis\n" +
+        getLogger().info("\nTrpServerTimeCommand  Copyright (C) 2021  TimeRunis\n" +
                 "该程序不提供任何担保。\n" +
                 "本插件是自由软件\n" +
                 "你可以在一些条件下重新分发它\n"+
