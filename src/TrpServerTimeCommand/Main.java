@@ -1,20 +1,18 @@
 package TrpServerTimeCommand;
-
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class Main extends JavaPlugin {
     public static JavaPlugin instance;
     public static String pluginName;
-
     @Override
     public void onLoad() {
         saveDefaultConfig();
     }
-
     @Override
     public void onEnable() {
         instance = this;
@@ -32,6 +30,7 @@ public class Main extends JavaPlugin {
         regOneTimeTask();
         regAllTimeTask();
         regDayTimeTask();
+        Objects.requireNonNull(Bukkit.getPluginCommand("TrpServerTimeCommand")).setExecutor(new CommandHandler());
     }
     public void regOneTimeTask(){
         int count = 1;
@@ -57,8 +56,6 @@ public class Main extends JavaPlugin {
             count++;
         }
     }
-
-
     public void countClear(){
         Reader.data.set("oneTime",null);
         getLogger().info("已清空oneTime记录！");

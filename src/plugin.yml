@@ -1,3 +1,10 @@
 main: TrpServerTimeCommand.Main
-version: 1.1
+version: 1.2
 name: TrpServerTimeCommand
+api-version: 1.15
+commands:
+  TrpServerTimeCommand:
+    aliases:
+      - "stc"
+    description: "check a player`s data"
+    usage: "/stc <PlayerName>"

@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="spigot-1.17">
     <CLASSES>
-      <root url="jar://H:/服务端/1.17开发/spigot-1.17.jar!/" />
+      <root url="jar://H:/服务端/1.15.2 开发/spigot-1.15.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://H:/服务端/1.17开发/spigot-1.17.jar!/" />
+      <root url="jar://H:/服务端/1.15.2 开发/spigot-1.15.2.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,19 +1,14 @@
 package TrpServerTimeCommand;
-
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Objects;
-
 public class CountTask extends BukkitRunnable{
-
     public void countTask(){}
-
     public void run(){
         SimpleDateFormat nowTime = new SimpleDateFormat("HH:mm");
         String t = nowTime.format(new Date());
