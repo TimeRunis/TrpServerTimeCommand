@@ -39,7 +39,7 @@ timeTask:
   1:
     #间隔时间/min
     time: 1
-    #要执行的指令，%playerName%代表玩家名称
+    #要执行的指令，%playerName%代表玩家名称,@no代表不执行
     command: "give %playerName% book 1"
     #发送给玩家的提示信息，%oneTimeMin%代表本次服务器启动后的在线时间单位为分钟
     message:  "&e你获得了一本书"
@@ -49,7 +49,7 @@ dayTimeTask:
   1:
     #间隔时间/min
     time: 1
-    #要执行的指令，%playerName%代表玩家名称
+    #要执行的指令，%playerName%代表玩家名称,@no代表不执行
     command: "give %playerName% book 1"
     #发送给玩家的提示信息，%dayTimeMin%代表每日在线时间单位为分钟
     message: "&e你获得了一本书"
@@ -59,7 +59,7 @@ allTimeTask:
   1:
     #间隔时间/min
     time: 1
-    #要执行的指令，%playerName%代表玩家名称
+    #要执行的指令，%playerName%代表玩家名称,@no代表不执行
     command: "give %playerName% book 1"
     #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
     message: "&e你获得了一本书"
@@ -69,7 +69,7 @@ dayTimeEvent:
   1:
     #达成条件/min
     time: 1
-    #要执行的指令，%playerName%代表玩家名称
+    #要执行的指令，%playerName%代表玩家名称,@no代表不执行
     command: "give %playerName% book 1"
     #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
     message: "&e你获得了一本书"
