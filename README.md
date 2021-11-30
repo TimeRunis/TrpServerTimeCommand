@@ -64,7 +64,7 @@ allTimeTask:
     #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
     message: "&e你获得了一本书"
 
-#暂未实现
+#本项基于dayTime数据
 dayTimeEvent:
   1:
     #达成条件/min
@@ -73,6 +73,27 @@ dayTimeEvent:
     command: "give %playerName% book 1"
     #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
     message: "&e你获得了一本书"
+
+#本项基于oneTime数据
+oneTimeEvent:
+  1:
+    #达成条件/min
+    time: 1
+    #要执行的指令，%playerName%代表玩家名称,@no代表不执行
+    command: "give %playerName% book 1"
+    #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
+    message: "&e你获得了一本书"
+
+#本项基于allTime数据
+allTimeEvent:
+  1:
+    #达成条件/min
+    time: 1
+    #要执行的指令，%playerName%代表玩家名称,@no代表不执行
+    command: "give %playerName% book 1"
+    #发送给玩家的提示信息，%allTimeMin%代表总在线时间单位为分钟
+    message: "&e你获得了一本书"
+
 ```
 <br><br><br>
 
