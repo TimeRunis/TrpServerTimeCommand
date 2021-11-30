@@ -15,8 +15,6 @@ public final class Reader {
     }
     public static void reloadFiles(){
         file1 = new File(Main.instance.getDataFolder(),"config.yml");
-        file2 = new File(Main.instance.getDataFolder(),"playerData.yml");
         config = YamlConfiguration.loadConfiguration(file1);
-        data = YamlConfiguration.loadConfiguration(file2);
     }
 }

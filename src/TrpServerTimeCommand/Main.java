@@ -27,31 +27,47 @@ public class Main extends JavaPlugin {
         if(!(new File(getDataFolder(), "playerData.yml")).exists()){
             saveResource("playerData.yml", false);}
         (new CountTask()).runTaskTimer(this,1200,1200);
-        regOneTimeTask();
-        regAllTimeTask();
-        regDayTimeTask();
+        regTask();
+        regEvent();
         Objects.requireNonNull(Bukkit.getPluginCommand("TrpServerTimeCommand")).setExecutor(new CommandHandler());
     }
-    public void regOneTimeTask(){
+    public void regTask(){
         int count = 1;
         while(Reader.config.get("timeTask."+ count)!=null){
             OneTimeTask t = new OneTimeTask(count);
             t.runTaskTimer(this,1200,1200);
             count++;
         }
-    }
-    public void regAllTimeTask(){
-        int count = 1;
+        count = 1;
         while(Reader.config.get("allTimeTask."+ count)!=null){
-           AllTimeTask t = new AllTimeTask(count);
+            AllTimeTask t = new AllTimeTask(count);
+            t.runTaskTimer(this,1200,1200);
+            count++;
+        }
+        count = 1;
+        while(Reader.config.get("dayTimeTask."+ count)!=null){
+            DayTimeTask t = new DayTimeTask(count);
             t.runTaskTimer(this,1200,1200);
             count++;
         }
     }
-    public void regDayTimeTask(){
+
+    public void regEvent(){
         int count = 1;
-        while(Reader.config.get("dayTimeTask."+ count)!=null){
-            DayTimeTask t = new DayTimeTask(count);
+        while(Reader.config.get("dayTimeEvent."+ count)!=null){
+            DayTimeEvent t = new DayTimeEvent(count);
+            t.runTaskTimer(this,1200,1200);
+            count++;
+        }
+        count = 1;
+        while(Reader.config.get("oneTimeEvent."+ count)!=null){
+            OneTimeEvent t = new OneTimeEvent(count);
+            t.runTaskTimer(this,1200,1200);
+            count++;
+        }
+        count = 1;
+        while(Reader.config.get("allTimeEvent."+ count)!=null){
+            AllTimeEvent t = new AllTimeEvent(count);
             t.runTaskTimer(this,1200,1200);
             count++;
         }
@@ -65,4 +81,5 @@ public class Main extends JavaPlugin {
             e.printStackTrace();
         }
     }
+
 }
